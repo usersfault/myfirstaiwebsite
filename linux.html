@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Linux Learnings | Ayush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🐧 Linux Notes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="linux.html">Linux</a>
+      <a href="networking.html">Networking</a>
+      <a href="ai.html">AI</a>
+      <a href="bugbounty.html">Bug Bounty</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>🧠 Why Linux?</h2>
+    <p>
+      Linux is the base of most servers, hacking tools, and open-source systems. It’s flexible, powerful, and made for people who love control. For Ayush, Linux became the first real step into hacking, networking, and building smart systems.
+    </p>
+
+    <h2>📂 Useful Linux Commands</h2>
+    <ul>
+      <li><code>ls</code> – List files and directories</li>
+      <li><code>cd</code> – Change directory</li>
+      <li><code>chmod</code> – Change file permissions</li>
+      <li><code>chown</code> – Change file ownership</li>
+      <li><code>find</code> – Search files by name, type, or permission</li>
+      <li><code>cat</code> – Display file contents</li>
+      <li><code>scp</code> – Secure file copy over SSH</li>
+      <li><code>sudo</code> – Run commands as root</li>
+      <li><code>history</code> – Show previously executed commands</li>
+    </ul>
+
+    <h2>🔐 File Permissions & SetUID</h2>
+    <p>
+      Ayush explored the power of Linux permissions using:
+    </p>
+    <ul>
+      <li><code>chmod u+s file</code> – SetUID bit, lets users run the file as the owner (commonly root)</li>
+      <li><code>ls -l</code> – Shows permission bits like <code>-rwsr-xr-x</code></li>
+      <li><code>chmod u-s file</code> – Remove the SetUID bit</li>
+      <li><strong>Note:</strong> You may see “Operation not permitted” if you try removing SetUID without root access</li>
+    </ul>
+
+    <h2>🛠️ Linux Tools I Used</h2>
+    <ul>
+      <li><strong>Nmap</strong> – Port scanning tool</li>
+      <li><strong>Socat</strong> – For creating listeners and reverse shells</li>
+      <li><strong>Strongswan</strong> – IPsec VPN tool</li>
+      <li><strong>dig</strong> – DNS tool for looking up IPs and records</li>
+      <li><strong>socat</strong> – For redirecting ports and traffic</li>
+      <li><strong>SSH</strong> – For connecting to remote systems securely</li>
+    </ul>
+
+    <h2>🧱 System Hardening (Security Basics)</h2>
+    <p>Ayush learned that hardening means reducing vulnerabilities. On Linux, that includes:</p>
+    <ul>
+      <li>Disabling unused services</li>
+      <li>Setting file permissions strictly</li>
+      <li>Using tools like <code>ufw</code> or <code>iptables</code> to control traffic</li>
+      <li>Installing fail2ban to prevent brute force attacks</li>
+      <li>Regular system updates and kernel patches</li>
+    </ul>
+
+    <h2>🔍 Other Key Topics</h2>
+    <ul>
+      <li><strong>EOF (End of File)</strong> – How to simulate EOF in the terminal using <code>Ctrl+D</code></li>
+      <li><strong>SetUID & Exploits</strong> – How attackers abuse SetUID binaries to escalate privileges</li>
+      <li><strong>Virtual Machines</strong> – Using Linux in VMs for labs and sandbox testing</li>
+    </ul>
+
+    <h2>📌 What I Plan to Learn Next</h2>
+    <ul>
+      <li>How to write bash scripts to automate security scans</li>
+      <li>How to configure my own firewall rules manually</li>
+      <li>Use AppArmor and SELinux for advanced hardening</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Documenting the Linux journey — Ayush 🐧</p>
+  </footer>
+</body>
+</html>
